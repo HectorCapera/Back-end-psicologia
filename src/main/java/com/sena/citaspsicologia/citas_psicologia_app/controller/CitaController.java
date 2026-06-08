@@ -21,7 +21,10 @@ import lombok.RequiredArgsConstructor;
 
 @RestController
 @RequestMapping("/api/citas")
-@CrossOrigin(origins = "http://localhost:5173")
+@CrossOrigin(origins = {
+    "https://sanandovirtual.com",
+    "https://www.sanandovirtual.com"
+})
 @RequiredArgsConstructor
 public class CitaController {
 

@@ -16,7 +16,10 @@ import lombok.RequiredArgsConstructor;
 
 @RestController
 @RequestMapping("/api/pacientes")
-@CrossOrigin(origins = "http://localhost:5173")
+@CrossOrigin(origins = {
+    "https://sanandovirtual.com",
+    "https://www.sanandovirtual.com"
+})
 @RequiredArgsConstructor
 public class PacienteController {
 
